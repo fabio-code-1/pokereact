@@ -2,7 +2,7 @@ import './Header.css';
 import NavBar from '../NavBar/NavBar.js';
 function Header() {
   return (
-    <header classNameName="border">
+    <header className="border">
      <NavBar/>
     </header>
   );
