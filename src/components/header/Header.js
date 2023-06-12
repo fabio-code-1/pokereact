@@ -1,9 +1,10 @@
-
+import './Header.css';
+import NavBar from '../NavBar/NavBar.js';
 function Header() {
   return (
-    <section>
-      <h1>Header</h1>
-    </section>
+    <header classNameName="border">
+     <NavBar/>
+    </header>
   );
 }
 
