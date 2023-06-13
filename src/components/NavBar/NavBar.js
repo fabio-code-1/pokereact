@@ -1,5 +1,10 @@
 import './NavBar.css';
-import logo from '../../assets/images/pokemon-logo-8.png'; //
+import logo from '../../assets/images/pokemon-logo-8.png';
+import bullbasaur from '../../assets/icons/bullbasaur.png';
+import charmander from '../../assets/icons/charmander.png';
+import pikachu from '../../assets/icons/pikachu.png';
+import squirtle from '../../assets/icons/squirtle.png';
+import pokedex from '../../assets/icons/pokedex.png';
 function NavBar() {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
@@ -14,10 +19,34 @@ function NavBar() {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0 w-100 align-items-center justify-content-center">
             <li className="nav-item">
-              <a className="nav-link active" aria-current="page" href="#home">Página Inicial</a>
+              <a className="nav-link d-flex flex-column align-items-center" href="#home">
+                <img src={pikachu} className="img-fluid mb-2" alt="icon" width="50" height="40" />
+                <span className="text-center btn btn-warning text-light btn-sm">Início</span>
+              </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#home">Pokédex</a>
+              <a className="nav-link d-flex flex-column align-items-center" href="#home">
+                <img src={pokedex} className="img-fluid mb-2" alt="icon" width="50" height="40" />
+                <span className="text-center btn btn-dark text-light btn-sm">Pokédex</span>
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link d-flex flex-column align-items-center" href="#home">
+                <img src={bullbasaur} className="img-fluid mb-2" alt="icon" width="50" height="40" />
+                <span className="text-center btn btn-success text-light btn-sm">Link</span>
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link d-flex flex-column align-items-center" href="#home">
+                <img src={charmander} className="img-fluid mb-2" alt="icon" width="50" height="40" />
+                <span className="text-center btn btn-danger text-light btn-sm">Link</span>
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link d-flex flex-column align-items-center" href="#home">
+                <img src={squirtle} className="img-fluid mb-2" alt="icon" width="50" height="40" />
+                <span className="text-center btn btn-primary text-light btn-sm">Link</span>
+              </a>
             </li>
           </ul>
           <form className="d-flex">
