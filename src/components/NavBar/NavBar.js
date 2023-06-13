@@ -6,6 +6,7 @@ import pikachu from '../../assets/icons/pikachu.png';
 import squirtle from '../../assets/icons/squirtle.png';
 import pokedex from '../../assets/icons/pokedex.png';
 import menu from '../../assets/icons/menu.png';
+import themeLight from '../../assets/icons/theme-dark.png';
 function NavBar() {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
@@ -55,8 +56,8 @@ function NavBar() {
               </div>
               <div className="nav-item ms-3">
                 <div className="nav-link d-flex flex-column align-items-center" href="#home">
-                  <img src={squirtle} className="img-fluid mb-2" alt="icon" width="50" height="40" />
-                  <span className="text-center text-dark btn-sm">Light</span>
+                  <img src={themeLight} className="img-fluid mb-2" alt="icon" width="50" height="40" />
+                  <span className="text-center text-light btn-sm btn btn-secondary">Dark</span>
                 </div>
               </div>
             </div>
