@@ -5,6 +5,7 @@ import charmander from '../../assets/icons/charmander.png';
 import pikachu from '../../assets/icons/pikachu.png';
 import squirtle from '../../assets/icons/squirtle.png';
 import pokedex from '../../assets/icons/pokedex.png';
+import menu from '../../assets/icons/menu.png';
 function NavBar() {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
@@ -12,8 +13,8 @@ function NavBar() {
         <a className="navbar-brand d-flex align-items-center justify-content-center text-center justify-content-sm-center" href="/">
           <img src={logo} className="img-fluid sm-img" alt="logo-pokemon" width="300" height="100" />
         </a>
-        <button className="navbar-toggler mx-auto button-bnt" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          
+        <button className="navbar-toggler mx-auto button-bnt mb-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <img src={menu} className="img-fluid" alt="logo-pokemon" width="30" height="10" />
         </button>
 
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
@@ -34,7 +35,7 @@ function NavBar() {
               <div className="nav-item ms-3">
                 <a className="nav-link d-flex flex-column align-items-center" href="#home">
                   <img src={bullbasaur} className="img-fluid mb-2" alt="icon" width="50" height="40" />
-                  <span className="text-center btn btn-success text-light btn-sm">Link</span>
+                  <span className="text-center btn btn-success text-light btn-sm">Video Games</span>
                 </a>
               </div>
             </div>
@@ -43,13 +44,13 @@ function NavBar() {
               <div className="nav-item ms-3">
                 <a className="nav-link d-flex flex-column align-items-center" href="#home">
                   <img src={charmander} className="img-fluid mb-2" alt="icon" width="50" height="40" />
-                  <span className="text-center btn btn-danger text-light btn-sm">Link</span>
+                  <span className="text-center btn btn-danger text-light btn-sm">Pokémon TV</span>
                 </a>
               </div>
               <div className="nav-item ms-3">
                 <a className="nav-link d-flex flex-column align-items-center" href="#home">
                   <img src={squirtle} className="img-fluid mb-2" alt="icon" width="50" height="40" />
-                  <span className="text-center btn btn-primary text-light btn-sm">Link</span>
+                  <span className="text-center btn btn-primary text-light btn-sm">Pokémon Events</span>
                 </a>
               </div>
               <div className="nav-item ms-3">
