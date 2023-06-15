@@ -27,7 +27,7 @@ const Carousel = () => {
     beforeChange: (current, next) => setActiveSlide(next),
     responsive: [
       {
-        breakpoint: 600,
+        breakpoint: 900,
         settings: {
           slidesToShow: 1,
           centerPadding: '25px', // Espaçamento maior entre os slides em dispositivos móveis
