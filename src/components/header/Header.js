@@ -1,16 +1,13 @@
 import './Header.css';
 import NavBar from '../NavBar/NavBar.js';
 import Carousel from '../carrousel/Carousel.js';
-import Search from '../search/Search';
-
+import SearchMobile from '../search-mobile/SearchMobile';
 
 function Header() {
   return (
     <header className="d-flex  flex-column overflow-hidden">
       <NavBar />
-      <div>
-        <Search />
-      </div>
+      <SearchMobile />
       <Carousel />
     </header>
   );

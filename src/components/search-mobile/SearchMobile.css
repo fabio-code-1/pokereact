@@ -1,0 +1,9 @@
+.search-mobile {
+  display: none;
+}
+
+@media (max-width: 991px) {
+  .search-mobile {
+    display: block; /* ou 'inline', dependendo do contexto */
+  }
+}
