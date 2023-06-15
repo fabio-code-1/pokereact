@@ -3,9 +3,11 @@
 }
 
 .carousel{
-  margin-top: 10%;
-} 
-
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  border: 1px red solid;
+}
 
 .slick-dots li button:before {
   color: white; /* Altera a cor das bolinhas para branco */

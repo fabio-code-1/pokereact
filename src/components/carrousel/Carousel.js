@@ -22,27 +22,37 @@ const Carousel = () => {
     swipeToSlide: true,
     initialSlide: 3,
     centerMode: true,
+    centerPadding: '10px', // Espaçamento entre os slides
     cssEase: 'ease-out', // Adiciona uma transição suave
     beforeChange: (current, next) => setActiveSlide(next),
+    responsive: [
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          centerPadding: '25px', // Espaçamento maior entre os slides em dispositivos móveis
+        },
+      },
+    ],
   };
 
   return (
-    <div className="carousel">
+    <div className="carousel h-100 ">
       <Slider {...settings}>
-        <div className={`carousel-slide ${activeSlide === 0 ? 'active' : ''}`}>
-          <img src={pikachu} alt="Slide 1" width={'350px'} height={'350px'} />
+        <div className={`carousel-slide d-flex align-items-center justify-content-center ${activeSlide === 0 ? 'active' : ''}`}>
+          <img src={pikachu} alt="Slide 1" className=" sm-img " width={'350px'} height={'350px'} />
         </div>
-        <div className={`carousel-slide ${activeSlide === 1 ? 'active' : ''}`}>
-          <img src={eevee} alt="Slide 2" width={'350px'} height={'350px'} />
+        <div className={`carousel-slide d-flex align-items-center justify-content-center ${activeSlide === 1 ? 'active' : ''}`}>
+          <img src={eevee} alt="Slide 2" className=" sm-img " width={'350px'} height={'350px'} />
         </div>
-        <div className={`carousel-slide ${activeSlide === 2 ? 'active' : ''}`}>
-          <img src={squirtle} alt="Slide 3" width={'350px'} height={'350px'} />
+        <div className={`carousel-slide d-flex align-items-center justify-content-center ${activeSlide === 2 ? 'active' : ''}`}>
+          <img src={charmander} alt="Slide 3" className=" sm-img " width={'400px'} height={'350px'} />
         </div>
-        <div className={`carousel-slide ${activeSlide === 3 ? 'active' : ''}`}>
-          <img src={charmander} alt="Slide 4" width={'400px'} height={'350px'} />
+        <div className={`carousel-slide d-flex align-items-center justify-content-center ${activeSlide === 3 ? 'active' : ''}`}>
+          <img src={squirtle} alt="Slide 4" className=" sm-img " width={'350px'} height={'350px'} />
         </div>
-        <div className={`carousel-slide ${activeSlide === 4 ? 'active' : ''}`}>
-          <img src={bulbasaur} alt="Slide 5" width={'350px'} height={'350px'} />
+        <div className={`carousel-slide d-flex align-items-center justify-content-center ${activeSlide === 4 ? 'active' : ''}`}>
+          <img src={bulbasaur} alt="Slide 5" className=" sm-img " width={'350px'} height={'350px'} />
         </div>
       </Slider>
     </div>
