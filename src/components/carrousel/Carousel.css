@@ -5,3 +5,12 @@
 .carousel{
   margin-top: 10%;
 } 
+
+
+.slick-dots li button:before {
+  color: white; /* Altera a cor das bolinhas para branco */
+}
+
+.slick-dots li.slick-active button:before {
+  color: red; /* Altera a cor da bolinha selecionada para vermelho */
+}
