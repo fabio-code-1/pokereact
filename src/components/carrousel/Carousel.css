@@ -1,0 +1,7 @@
+.carousel-slide:focus {
+  outline: none;
+}
+
+.carousel{
+  margin-top: 10%;
+} 
