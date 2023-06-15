@@ -3,11 +3,11 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import './Carousel.css';
-import bulbasaur from './pokemon-header/bulbasaur-pokemon.png';
-import eevee from './pokemon-header/eevee-pokemon.png';
-import pikachu from './pokemon-header/pikachu-pokemon.png';
-import squirtle from './pokemon-header/squirtle-pokemon.png';
-import charmander from './pokemon-header/charmander-pokemon.webp';
+import bulbasaur from '../../assets/images/pokemon-header/bulbasaur-pokemon.png';
+import eevee from '../../assets/images/pokemon-header/eevee-pokemon.png';
+import pikachu from '../../assets/images/pokemon-header/pikachu-pokemon.png';
+import squirtle from '../../assets/images/pokemon-header/squirtle-pokemon.png';
+import charmander from '../../assets/images/pokemon-header/charmander-pokemon.webp';
 
 const Carousel = () => {
   const [activeSlide, setActiveSlide] = useState(0);
