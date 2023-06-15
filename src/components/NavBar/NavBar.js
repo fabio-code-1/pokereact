@@ -7,6 +7,8 @@ import squirtle from '../../assets/icons/squirtle.png';
 import pokedex from '../../assets/icons/pokedex.png';
 import menu from '../../assets/icons/menu.png';
 import themeLight from '../../assets/icons/theme-dark.png';
+import Search from '../search/Search.js';
+
 function NavBar() {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
@@ -62,12 +64,7 @@ function NavBar() {
               </div>
             </div>
           </ul>
-
-
-          <form className="d-flex d-none">
-            <input className="form-control me-2" type="search" placeholder="Pokemon... " aria-label="Search" />
-            <button className="btn btn-outline-success" type="submit">Pesquisar</button>
-          </form>
+          <Search />
         </div>
       </div>
     </nav>
