@@ -64,7 +64,7 @@ function NavBar() {
           </ul>
 
 
-          <form className="d-flex">
+          <form className="d-flex d-none">
             <input className="form-control me-2" type="search" placeholder="Pokemon... " aria-label="Search" />
             <button className="btn btn-outline-success" type="submit">Pesquisar</button>
           </form>
