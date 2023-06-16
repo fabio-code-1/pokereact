@@ -2,6 +2,7 @@ import './Header.css';
 import NavBar from '../NavBar/NavBar.js';
 import Carousel from '../carrousel/Carousel.js';
 import SearchMobile from '../search-mobile/SearchMobile';
+import refreshbutton from '../../assets/icons/refresh-button.png';
 
 function Header() {
   return (
@@ -9,7 +10,9 @@ function Header() {
       <NavBar />
       <SearchMobile />
       <div class="d-grid gap-2 col-6 mx-auto m-5">
-        <button class="btn btn-warning" type="button"><i class="bi bi-arrow-clockwise"></i>Surpreenda-me</button>
+        <button class="btn btn-warning text-light" type="button">Surpreenda-me
+        <img src={refreshbutton} className=" ms-3 img-fluid" alt="icon" width="30" height="10" />
+        </button>
       </div>
       <Carousel />
     </header>
