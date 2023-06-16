@@ -8,6 +8,9 @@ function Header() {
     <header className="d-flex  flex-column overflow-hidden">
       <NavBar />
       <SearchMobile />
+      <div class="d-grid gap-2 col-6 mx-auto m-5">
+        <button class="btn btn-warning" type="button"><i class="bi bi-arrow-clockwise"></i>Surpreenda-me</button>
+      </div>
       <Carousel />
     </header>
   );
