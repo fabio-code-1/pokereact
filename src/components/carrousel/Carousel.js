@@ -37,7 +37,7 @@ const Carousel = () => {
   };
 
   return (
-    <div className="carousel h-100 ">
+    <div className="carousel h-100 mb-5 ">
       <Slider {...settings}>
         <div className={`carousel-slide d-flex align-items-center justify-content-center ${activeSlide === 0 ? 'active' : ''}`}>
           <img src={pikachu} alt="Slide 1" className=" sm-img " width={'350px'} height={'350px'} />

@@ -9,9 +9,9 @@ function Header() {
     <header className="d-flex  flex-column overflow-hidden">
       <NavBar />
       <SearchMobile />
-      <div class="d-grid gap-2 col-6 mx-auto m-5">
+      <div class="d-grid gap-2 col-6 mx-auto mt-3 mb-3">
         <button class="btn btn-warning text-light" type="button">Surpreenda-me
-        <img src={refreshbutton} className=" ms-3 img-fluid" alt="icon" width="30" height="10" />
+        <img src={refreshbutton} className=" ms-3 img-fluid" alt="icon" width="20" height="20" />
         </button>
       </div>
       <Carousel />
